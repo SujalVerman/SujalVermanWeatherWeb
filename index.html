@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Web</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="container-fluid">
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i>Weather Web</i></a>
@@ -18,211 +20,181 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About this app</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Delhi</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
-                            <li>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About this app</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delhi</a></li>
                                 <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Banglore</a></li>
-                        </ul>
+                                <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Banglore</a></li>
+                            </ul>
 
-                    </li>
-                    <!-- <li class="nav-item"> -->
-                    <!-- <a class="dropdown-item" href="#">Usage Guide</a> -->
-                    </li>
-                </ul>
-                <form class="d-d fn" role="search">
+                        </li>
+                        <!-- <li class="nav-item"> -->
+                        <!-- <a class="dropdown-item" href="#">Usage Guide</a> -->
+                        </li>
+                    </ul>
+                    <form class="d-d fn" role="search">
 
-                    <input id="city" class="form-control me-2" type="search" placeholder="Search"
-                        aria-label="Search"><button class="btn btn-outline-success" type="submit"
-                        id="submit">Search</button>
+                        <input id="city" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search"><button class="btn btn-outline-success" type="submit"
+                            id="submit">Search</button>
 
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
     </nav>
-     <div class="lolo"> 
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center rounded-3">
+            <div class="container ">
+                <div class="card mb-4 rounded-3 shadow">
+                    <div class="card-header py-3text-center bg-primary border border-primary rounded-3">
+                        <h4 class="my-0 fw-normal "><b>Time of India</b></h4>
+                    </div>
+                    <div class=" container col-sm-12">
+                        <h1 class="container pricing-card-title ">
+                            <small class="text-body-secondary fw-light">
+
+                            </small>
+                        </h1>
+                        
+                        <ul class="list-unstyled">
+                            <div id="container col-sm-12 row-sm-12">
+                                <script src="hojo.js"></script>
+
+                            
+                            
+
+
+                            <div class="container-fluid border border-3 border rounded rounded-3 text-bg-dark bi bi-clock p-2 col-12 " class=" time" id="time-div" style="font-weight: bold;"> </div>
+                            
+                    </div>
+                </div>
+
+</body>
+<div class="container kolo border border-dark bg-dark text-white col-sm-12 text-center">
+    <h1><i>Enjoy Your Precious Time,</i></h1>
+    <h1><i>Coz It Never Come Back.</i></h1>
+</div>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+
+
+     <!-- <div class="awr"> -->
+    <h1 class="my-4 text-center border bg-light  background-color-white  p-2  my-5 mx-5"> Weather of <span id="cityName"></span></h1>
+
+    <style>
+
+        /* .awr{
+            border: black;
+            padding-left: 25% ;
+            padding-right: 25%;
+            
+            
+        } */
+
+
+
+    </style>
+     </div>
+
+
+
+
+
+
+
+</div>
+
+
+    <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="colo">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal"><b>Time of India</b></h4>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow border-primary">
+                    <div class="card-header py-3 text-bg-primary">
+                        <h4 class="my-0 fw-normal">Temperature</h4>
                     </div>
                     <div class="card-body">
                         <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small>
                         </h1>
-                        <span id="hojo"></span>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <div id="hojo"></div>
-                            
-                            <script src="hojo.js"></script>
+                            <li><b>Temperature is</b> <span id="temp"></span>&#8451;</li>
+                            <li><b>Min Temperature is</b> <span id="min_temp"></span>&#8451;</li>
+                            <li><b>Max Temperature is</b> <span id="max_temp"></span>&#8451;</li>
 
-                            <style>
-                                .time {
-                                  font-family: Arial, sans-serif;
-                                  font-size: 90px;
-                                  color: white;
-                                  background-color: blue;
-                                  border-radius: 10px;
-                                  padding-left: 0px;
-                                  padding-right: 0px;
-                                  padding-top: 0px;
-                                  margin: 80px;
-                                  text-align: center;
-                                }
-                              </style>
-                              <script src="time.js"></script>
-                            
-                            
-                              <div class="time" id="time-div"></div>
-                            </body>
-                            
-                            <style>
-                                /* .hojo{
-                                    font-family: Arial, sans-serif;
-                                    font-size: 80px;
-                                    color: white;
-                                    text-align: center;
-                                    margin-top: 0%;
-                                    background-color: rgb(24, 24, 202);
-                                    width: 00px;
-                                    height: 80px;
-                                    border-radius: 10px;
-                                    float: center;
-                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                                    position: relative;
-                                } */
+
+                        </ul>
 
 
 
 
-                                .colo {
-                                    border: 5px;
-                                    margin: auto;
-                                    width: 50%;
-                                    padding: 10px;
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card mb-4 rounded-3 shadow border-primary">
+                    <div class="card-header py-3 text-bg-primary">
+                        <h4 class="my-0 fw-normal">Humidity</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <!-- <li>Cloud PCT is <span id="cloud_pct"></span></li> -->
+                            <li><b>Feels Like is</b> <span id="feels_like"></span>&#8451;</li>
+                            <li><b>Humidity is</b> <span id="humidity"></span>&#37;</li>
+                            <li><b>Wind Speed is</b> <span id="wind_speed"></span>km/h</li>
+                        </ul>
 
-                                }
-                                .kolo{
-                                    text-align: center;
-                                    color: solid black;
-                                    padding: 7px;
-                                    margin-left: 140px;
-                                    margin-right: 100px;
-                                    border-style: dotted;
-                                    height: 120px;
-                                    background-color: wheat;
-                                }
-                                
-
-                            </style>
-                            <div class="kolo"><h1><i>Enjoy Your Precious Time,</i></h1>
-                                <h1><i>Coz It Never Come Back.</i></h1>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="card mb-4 rounded-3 shadow border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">More</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Wind Degree is </b><span id="wind_degrees"></span>&#176;</li>
+                            <li><b>Sunrise Time is </b><span id="sunrise"></span></li>
+                            <li><b>Sunset time is </b><span id="sunset"></span></li>
                         </ul>
 
                     </div>
                 </div>
             </div>
         </div>
-     </div> 
-
-
-
-
-
-    <div class="container">
-
-
-
-        <h1 class="my-4 text-center background-color white"> Weather of <span id="cityName"></span></h1>
-
-
-        <main>
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Temperature</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title"><small
-                                    class="text-body-secondary fw-light"></small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li><b>Temperature is</b> <span id="temp"></span>&#8451;</li>
-                                <li><b>Min Temperature is</b> <span id="min_temp"></span>&#8451;</li>
-                                <li><b>Max Temperature is</b> <span id="max_temp"></span>&#8451;</li>
-
-                            </ul>
-
-                            <style>
-                                .dodo{
-                                    box-shadow: #7291d8;
-                                    
-                                    
-                                    color: white;
-                                }
-                            </style> 
-
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Humidity</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title"><small
-                                    class="text-body-secondary fw-light"></small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <!-- <li>Cloud PCT is <span id="cloud_pct"></span></li> -->
-                                <li><b>Feels Like is</b> <span id="feels_like"></span>&#8451;</li>
-                                <li><b>Humidity is</b> <span id="humidity"></span>&#37;</li>
-                                <li><b>Wind Speed is</b> <span id="wind_speed"></span>km/h</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                        <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">More</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title"><small
-                                    class="text-body-secondary fw-light"></small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li><b>Wind Degree is </b><span id="wind_degrees"></span>&#176;</li>
-                                <li><b>Sunrise Time is </b><span id="sunrise"></span></li>
-                                <li><b>Sunset time is </b><span id="sunset"></span></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <h2 class="display-6 text-center mb-4">Other Common Places Weather</h2>  
+        <!-- <h2 class="display-6 text-center mb-4">Other Common Places Weather</h2>  
 
             <div class="table-responsive">
                 <table class="table text-center">
@@ -301,23 +273,24 @@
                         </tr>
                     </table>
                 </tbody>-->
-    </div>
-    </main>
-    </div>
+</div>
+</main>
+</div>
+</div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 
 
-    <body style="background-color:#7291d8"></body> 
+<body style="background-color:#658CB1"></body>
 </body>
 
 </html>
