@@ -1,0 +1,110 @@
+/* body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+} */
+
+
+
+
+
+
+/* .hojo {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+    background-color: rgb(24, 24, 202);
+    width: 00px;
+    height: 80px;
+    border-radius: 10px;
+    float: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.colo {
+    border: 5px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.kolo {
+    
+    color: solid black;
+    padding: 7px;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-style: dotted;
+    height: 180px;
+    background-color: wheat;
+} */
+
+.body {
+    transition: background-color 0.5s ease;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 50px;
+  }
+
+  #sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFD700; /* Default sun color (gold) */
+    margin: 20px;
+    transition: background-color 0.5s ease;
+  }
+  .header{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)),url('../images/pexels-pixabay-36717.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 99%, 83% 84%, 66% 99%, 49% 84%, 32% 100%, 17% 84%, 0 100%); */
+  position: relative;
+}
+
+/* .video-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%, #3ccdbb 0%,#16c9f6 100%);
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+ @media (max-aspect-ratio : 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+ }
+ @media (max-aspect-ratio : 16/9){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+ }
+
