@@ -89,7 +89,7 @@
 }
 
 .back-video{
-    position: absolute;
+    position: fixed!important;
     right: 0;
     bottom: 0;
     z-index: -1;
