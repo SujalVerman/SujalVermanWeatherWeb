@@ -107,4 +107,12 @@
         height: auto;
     }
  }
-
+.solid{
+    border-radius: 10px;
+    border: 1px solid white;
+    background: transparent!important;
+    backdrop-filter: blur(8px);
+    background-color: rgba(135, 206, 250, 0.6);
+    color: white!important;
+    
+}
